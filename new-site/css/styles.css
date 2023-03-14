@@ -15,4 +15,13 @@
 }
 
 
+/*=========  Section Welcome  ==========*/
+.welcome-image {
+    width: 100% !important;
+    height: 350px !important;
+    object-fit: cover;
+    object-position: center left;
+    border-radius: 5px;
+}
+
 /*=========  Tiny Slider  ==========*/
