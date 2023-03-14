@@ -1,0 +1,18 @@
+/*=========  Navbar  ==========*/
+
+
+.nav .nav-item .nav-link {
+    color: #112A46 !important;
+}
+
+.nav .nav-item.active-link {
+    border-bottom: 3px #0a8bfb solid !important;
+}
+
+.nav .nav-item .nav-link.active-navbar-link {
+    color: #3695eb !important;
+    font-weight: 700;
+}
+
+
+/*=========  Tiny Slider  ==========*/
