@@ -29,8 +29,8 @@
                 </a>
 
                 <ul class="nav">
-                    <li class="nav-item active-link"><a href="#" class="nav-link active-navbar-link"
-                                                        aria-current="page">Home</a>
+                    <li class="nav-item active-link">
+                        <a href="#" class="nav-link active-navbar-link" aria-current="page">Home</a>
                     </li>
                     <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
@@ -44,8 +44,32 @@
 
     <div class="slider-background-image">
         <div class="container-fluid p-3 p-sm-5">
-            <div class="container">
+            <div class="container position-relative">
+                <div id="custom-controls" class="d-flex justify-content-between position-absolute z-1 w-100 top-50">
+                    <div class="prev">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                             viewBox="0 0 24 24"
+                             fill="currentColor"
+                             class="prev-arrow-icon">
+                            <path fill-rule="evenodd"
+                                  d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z"
+                                  clip-rule="evenodd"/>
+                        </svg>
+
+                    </div>
+                    <div class="next">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                             viewBox="0 0 24 24"
+                             fill="currentColor"
+                             class="next-arrow-icon">
+                            <path fill-rule="evenodd"
+                                  d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
+                                  clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                </div>
                 <div class="responsive" id="responsive">
+
                     <div class="item">
                         <div class="row">
                             <div class="col-12 col-lg-6">
@@ -74,6 +98,36 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-12 col-lg-6">
+                                <img
+                                        class="d-none d-lg-block tiny-image"
+                                        src="images/medical-images/diana-polekhina-Q_o_ob-3Ny4-unsplash.jpg"
+                                        alt="diana-polekhina-Q_o_ob-3Ny4-unsplash">
+                            </div>
+
+                            <div class="col-lg-6 d-lg-flex">
+                                <div class="d-flex flex-column justify-content-center align-content-center">
+                                    <h1 class="display-4 fw-semibold">
+                                        Comprehensive Dental Care for the Entire
+                                        Familys
+                                    </h1>
+
+                                    <h4 class="">A one-stop general dental office for adults and kids</h4>
+
+                                    <a href="/contacts.html"
+                                       class="btn align-self-start btn-light  p-3 mt-4 fw-bolder slider-button-ca">
+                                        Book an Appointment
+                                    </a>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -134,6 +188,7 @@
         items: 1,
         controls: true,
         nav: false,
+        controlsContainer: '#custom-controls'
 
     }
 

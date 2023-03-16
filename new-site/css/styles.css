@@ -47,3 +47,24 @@
     background: white !important;
 
 }
+
+#custom-controls .prev:hover, #custom-controls .next:hover{
+    cursor: pointer;
+}
+/*#custom-controls .prev, #custom-controls .next{*/
+/*    width: 48px;*/
+/*    height: 48px;*/
+/*    border: 4px solid #0a8bfb;*/
+/*    border-radius: 50%;*/
+/*    padding: 5px;*/
+/*    background: #fff;*/
+/*    margin-left: -25px;*/
+/*}*/
+
+.prev-arrow-icon,.next-arrow-icon{
+    width: 48px;
+    height: 48px;
+    font-weight: bold;
+    /*color: #0a8bfb;*/
+
+}
