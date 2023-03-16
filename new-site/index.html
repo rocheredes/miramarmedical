@@ -15,6 +15,7 @@
 
     <link href="images/favicon.ico" rel="icon" type="image/x-icon"/>
     <link rel="stylesheet" href="css/bootstrap.custom.css">
+    <link rel="stylesheet" href="plugins/tiny-slider/tiny-slider.css">
     <link rel="stylesheet" href="css/styles.css">
 
 </head>
@@ -22,7 +23,7 @@
 <main>
     <div class="shadow-sm bg-white">
         <div class="container">
-            <header class="d-flex flex-wrap justify-content-center align-items-center py-3 mb-4 ">
+            <header class="d-flex flex-wrap justify-content-center align-items-center py-3">
                 <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
                     <img src="images/logo-big.png" alt="miramar-logo"/>
                 </a>
@@ -41,49 +42,103 @@
     </div>
 
 
-    <div class="container bg-white rounded-3 p-3">
-        <div class="row gx-3">
-            <div class="col-sm-12 col-lg-7 order-2 order-lg-1">
-                <h1 class="fw-semibold mt-4 mt-lg-0">
-                    Welcome to
-                    <span style="color: #3695eb">MiraMar Family</span>
-                    <span style="color: #8ca53b">Dental</span>
-                </h1>
+    <div class="slider-background-image">
+        <div class="container-fluid p-5">
+            <div class="container">
+                <div class="responsive" id="responsive">
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-12 col-lg-6">
+                                <img
+                                        class="d-none d-lg-block tiny-image"
+                                        src="images/medical-images/diana-polekhina-Q_o_ob-3Ny4-unsplash.jpg"
+                                        alt="diana-polekhina-Q_o_ob-3Ny4-unsplash">
+                            </div>
 
-                <div>
+                            <div class="col-lg-6 d-lg-flex">
+                                <div class="d-flex flex-column justify-content-center align-content-center">
+                                    <h1 class="display-4 fw-semibold">
+                                        Comprehensive Dental Care for the Entire
+                                        Familys
+                                    </h1>
 
-                    <p class="" style="font-size: larger">
-                        <strong>MiraMar Family Dental Clinic </strong> is hospitably opening its doors
-                        as a newly renovated general dental
-                        office. We are pleased to offer you a wide range of high-quality general, cosmetic, and
-                        specialty care <strong>dentist services</strong> all in one place.
-                    </p>
-                    <p style="font-size: larger">
-                        Whatever dental issue you have, we are here to
-                        find the best solution. Modern digital equipment, <strong>pleasant atmosphere,</strong>
-                        and a bilingual (English/Spanish) skilled dentist are at your disposal in
-                        MiraMar
-
-                    </p>
-                    <p style="font-size: larger">
-                        Come to us, or make a <strong>call to schedule</strong> your next dental visit and become a
-                        part of our big friendly family. Believe, we’ll do everything possible to make you feel
-                        completely satisfied.
-                    </p>
+                                    <div class="unit-body">
+                                        <div>
+                                            <h5 class="">A one-stop general dental office for adults and kids</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-
-            <div class="col-xs-12 col-lg-5 order-1 order-lg-2">
-                <img src="./images/medical-images/geo-days--_u2i16I-jc-unsplash.jpg" class="img-fluid welcome-image"
-                     alt="MiraMarFamily">
             </div>
         </div>
     </div>
+
+    <div class="container-fluid bg-white p-3 p-sm-5">
+        <div class="container p-lg-5">
+            <div class="row gx-3">
+                <div class="col-sm-12 col-lg-7 order-2 order-lg-1">
+                    <h1 class="fw-semibold mt-4 mt-lg-0">
+                        Welcome to
+                        <span style="color: #8ca53b">MiraMar Family</span>
+                        <span style="color: #3695eb">Dental</span>
+                    </h1>
+
+                    <div>
+
+                        <p class="" style="font-size: larger">
+                            <strong>MiraMar Family Dental Clinic </strong> is hospitably opening its doors
+                            as a newly renovated general dental
+                            office. We are pleased to offer you a wide range of high-quality general, cosmetic, and
+                            specialty care <strong>dentist services</strong> all in one place.
+                        </p>
+                        <p style="font-size: larger">
+                            Whatever dental issue you have, we are here to
+                            find the best solution. Modern digital equipment, <strong>pleasant atmosphere,</strong>
+                            and a bilingual (English/Spanish) skilled dentist are at your disposal in
+                            MiraMar
+
+                        </p>
+                        <p style="font-size: larger">
+                            Come to us, or make a <strong>call to schedule</strong> your next dental visit and become a
+                            part of our big friendly family. Believe, we’ll do everything possible to make you feel
+                            completely satisfied.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-lg-5 order-1 order-lg-2">
+                    <img src="./images/medical-images/geo-days--_u2i16I-jc-unsplash.jpg" class="img-fluid welcome-image"
+                         alt="MiraMarFamily">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-5"></div>
 
 
 </main>
 
 
 <script src="js/bootstrap.bundle.min.js"></script>
+<script src="plugins/tiny-slider/tiny-slider.js"></script>
+<script>
+    const options = {
+        container: '.responsive',
+        items: 1,
+        controls: true,
+        nav: false,
+
+    }
+
+    const slider = tns(options)
+
+</script>
+<script>
+
+</script>
 </body>
 </html>

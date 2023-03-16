@@ -25,3 +25,27 @@
 }
 
 /*=========  Tiny Slider  ==========*/
+.tiny-image {
+    width: 100% !important;
+    height: 450px !important;
+    object-fit: cover;
+    object-position: center left;
+    border-radius: 5px;
+}
+
+.slider-background-image {
+
+    background-color: #0a8bfb;
+    background-image: url('../images/medical-images/pexels-daniel-frank-305566.jpg');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    color: #fff;
+
+    /*background: url('../images/medical-images/pexels-cottonbro-studio-6502553.jpg')*/
+    /*width: 100% !important;*/
+
+    /*background: url(../images/medical-images/pexels-cottonbro-studio-6502553.jpg) rgba(54, 149, 235, 0.7);*/
+    /*background-size: cover;*/
+    /*background-blend-mode: multiply;*/
+}
