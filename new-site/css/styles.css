@@ -29,7 +29,7 @@
     width: 100% !important;
     height: 450px !important;
     object-fit: cover;
-    object-position: center left;
+    object-position: center top;
     border-radius: 5px;
 }
 
@@ -51,6 +51,25 @@
 #custom-controls .prev:hover, #custom-controls .next:hover{
     cursor: pointer;
 }
+
+.image-overlay{
+    background: #0b0b0b;
+    opacity: 0.1;
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    inset: 0;
+    border-radius:5px
+}
+
+
+.prev-arrow-icon,.next-arrow-icon{
+    width: 48px;
+    height: 48px;
+    font-weight: bold;
+    /*color: #0a8bfb;*/
+
+}
 /*#custom-controls .prev, #custom-controls .next{*/
 /*    width: 48px;*/
 /*    height: 48px;*/
@@ -60,11 +79,3 @@
 /*    background: #fff;*/
 /*    margin-left: -25px;*/
 /*}*/
-
-.prev-arrow-icon,.next-arrow-icon{
-    width: 48px;
-    height: 48px;
-    font-weight: bold;
-    /*color: #0a8bfb;*/
-
-}
