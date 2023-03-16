@@ -41,11 +41,9 @@
     background-position: center;
     background-blend-mode: multiply;
     color: #fff;
+}
 
-    /*background: url('../images/medical-images/pexels-cottonbro-studio-6502553.jpg')*/
-    /*width: 100% !important;*/
+.slider-button-ca:hover {
+    background: white !important;
 
-    /*background: url(../images/medical-images/pexels-cottonbro-studio-6502553.jpg) rgba(54, 149, 235, 0.7);*/
-    /*background-size: cover;*/
-    /*background-blend-mode: multiply;*/
 }
