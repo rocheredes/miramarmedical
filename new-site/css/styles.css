@@ -8,6 +8,10 @@
     color: #3695eb !important;
 }
 
+.bg-custom-primary{
+    background: #3695eb !important;
+}
+
 .nav .nav-item .nav-link {
     color: #112A46 !important;
 }
