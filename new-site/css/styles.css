@@ -145,5 +145,19 @@
     height: 62px;
     border-radius: 5px;
 }
+/*=========  VISIT US TODAY  ==========*/
+.visit-us-icons-container {
+    background: #3695eb;
+    width: 48px;
+    height: 48px;
+    border-radius: 5px;
+}
 
+.visit-us-icons-icons {
+    width: 28px;
+    height: 28px;
+    margin: 0 auto;
+    color: white;
+
+}
 
