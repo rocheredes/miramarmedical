@@ -29,7 +29,7 @@
 /*=========  Section Welcome  ==========*/
 .welcome-image {
     width: 100% !important;
-    height: 350px !important;
+    height: 500px !important;
     object-fit: cover;
     object-position: center left;
     border-radius: 5px;
@@ -160,4 +160,7 @@
     color: white;
 
 }
+
+
+
 
