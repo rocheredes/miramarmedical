@@ -29,10 +29,14 @@
 /*=========  Section Welcome  ==========*/
 .welcome-image {
     width: 100% !important;
-    height: 500px !important;
+    /*height: auto !important;*/
     object-fit: cover;
     object-position: center left;
     border-radius: 5px;
+}
+
+.gi-padding {
+    padding: 0 0;
 }
 
 /*=========  Tiny Slider  ==========*/
@@ -145,6 +149,7 @@
     height: 62px;
     border-radius: 5px;
 }
+
 /*=========  VISIT US TODAY  ==========*/
 .visit-us-icons-container {
     background: #3695eb;
@@ -160,6 +165,43 @@
     color: white;
 
 }
+
+
+/*X-Small devices (portrait phones, less than 576px)*/
+/*No media query for `xs` since this is the default in Bootstrap*/
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    /*=========  Section Welcome  ==========*/
+    .welcome-image {
+        height: 550px !important;
+    }
+
+    .gi-padding {
+        padding: 7rem 0;
+    }
+
+
+}
+
+/*X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+
+}
+
+/*XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+}
+
 
 
 
