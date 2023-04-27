@@ -45,15 +45,15 @@
 
     <!---- GENERAL INFORMATION ---->
     <div class="container-fluid bg-white p-3 p-sm-5">
-        <div class="container ">
-            <div class="row gx-3">
-                <div class="col-sm-12 col-lg-5 order-2 order-lg-1 gi-padding">
+        <div class="container" style="padding: 7rem">
+            <div class="row">
+                <div class="col-sm-12 col-lg-5 ">
                     <div class="mb-4">
                         <h1 class="typography-color fw-bold mt-4 mt-lg-0" style="font-size:58px">
                             Book your appointment
                         </h1>
 
-                        <!--                    <p class="fst-italic">Description here</p>-->
+                        <p class="mt-2 fs-5">To Book an appoitment please give us a call or send us a message, Thank you!</p>
                     </div>
                     <div>
                         <h2 class="fw-bold" style="margin-bottom: 27px;font-size: 24px;line-height: 1.25em;">More
@@ -133,8 +133,52 @@
                     </div>
                 </div>
 
-                <div class="col-xs-12 col-lg-5 order-1 order-lg-2">
+                <div class="col-xs-12 col-lg-7 ">
+                    <form method="post" class="row gy-4">
+                        <div class="col-md-6">
+                            <label for="first_name" class="form-label fw-semibold">First Name</label>
+                            <input type="text"
+                                   name="first name"
+                                   class="form-control shadow-none form-control-lg"
+                                   id="first_name">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="last_name" class="form-label fw-semibold">Last Name</label>
+                            <input type="text"
+                                   name="last name"
+                                   class="form-control shadow-none form-control-lg"
+                                   id="last_name"
+                            >
+                        </div>
+                        <div class="col-md-6">
+                            <label for="email" class="form-label fw-semibold">Email</label>
+                            <input type="email"
+                                   name="email"
+                                   class="form-control shadow-none form-control-lg"
+                                   id="email">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="phone" class="form-label fw-semibold">Phone</label>
+                            <input type="text"
+                                   name="phone"
+                                   class="form-control shadow-none form-control-lg"
+                                   id="phone">
+                        </div>
+                        <div class="col-12">
+                            <label for="message" class="form-label fw-semibold ">Message</label>
+                            <textarea type="text"
+                                      name="message"
+                                      class="form-control shadow-none form-control-lg"
+                                      id="message"></textarea>
+                        </div>
 
+                        <div class="col-12">
+                            <button type="submit"
+                                    class="btn btn-lg btn-primary fw-semibold w-100">
+                                Book an Appointment
+                            </button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
