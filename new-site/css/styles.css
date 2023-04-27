@@ -189,6 +189,10 @@
         padding: 7rem 0;
     }
 
+    .contact-container-padding {
+        padding: 7rem !important;
+    }
+
 
 }
 
