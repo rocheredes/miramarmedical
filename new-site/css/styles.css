@@ -26,6 +26,16 @@
 }
 
 
+/*=========  About us  ==========*/
+.information-icons {
+    width: 48px !important;
+    height: 48px !important;
+}
+
+.fs-larger {
+    font-size: large !important;
+}
+
 /*=========  Section Welcome  ==========*/
 .welcome-image {
     width: 100% !important;
