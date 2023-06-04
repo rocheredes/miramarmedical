@@ -176,6 +176,70 @@
 
 }
 
+/*=========  CAPTCHA  ==========*/
+.g-recaptcha{
+    display:inline-block;
+    transform:scale(0.95);
+    -webkit-transform:scale(0.95);
+    transform-origin:0 0;
+    -webkit-transform-origin:0 0;
+}
+
+
+/*=========  SNACKBARS  ==========*/
+.snackbars {
+    max-width: 280px;
+    padding: 9px 16px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    text-align: left;
+    background-color: #212121;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+.snackbars .icon-xxs {
+    font-size: 20px;
+}
+
+.snackbars p span:last-child {
+    padding-left: 14px;
+}
+
+.snackbars-left {
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.snackbars-right {
+    display: inline-block;
+    float: right;
+    text-transform: uppercase;
+}
+
+.snackbars-right:hover {
+    text-decoration: underline;
+}
+/*=========  FORM OUTPUT GLOBAL  ==========*/
+#form-output-global {
+    position: fixed;
+    bottom: 30px;
+    left: 15px;
+    visibility: hidden;
+    -webkit-transform: translateX(-500px);
+    transform: translateX(-500px);
+    transition: .3s all ease;
+    z-index: 9999999;
+}
+
+#form-output-global.active {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    visibility: visible;
+}
+
 
 /*X-Small devices (portrait phones, less than 576px)*/
 /*No media query for `xs` since this is the default in Bootstrap*/
@@ -200,7 +264,7 @@
     }
 
     .contact-container-padding {
-        padding: 7rem !important;
+        padding: 7rem 7rem 0.5rem 7rem !important;
     }
 
 
