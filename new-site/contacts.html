@@ -36,7 +36,8 @@
                     <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Special Offers</a></li>
-                    <li class="nav-item active-link"><a href="contacts.html" class="nav-link active-navbar-link">Contacts</a></li>
+                    <li class="nav-item active-link"><a href="contacts.html" class="nav-link active-navbar-link">Contacts</a>
+                    </li>
                 </ul>
             </header>
         </div>
@@ -45,11 +46,11 @@
 
     <!---- GENERAL INFORMATION ---->
     <div class="container-fluid bg-white p-3 p-sm-5">
-        <div class="container contact-container-padding" >
+        <div class="container contact-container-padding">
             <div class="row">
                 <div class="col-sm-12 col-lg-8 ">
                     <div class="mb-4">
-                        <h1 class="mt-4 mt-lg-0 typography-color fw-bold display-3" >
+                        <h1 class="mt-4 mt-lg-0 typography-color fw-bold display-3">
                             Book your appointments
                         </h1>
 
@@ -58,7 +59,13 @@
                             dental services or the dental care on the whole. We are always willing to help.
                         </p>
 
-                        <form method="post" class="row gy-4">
+                        <form
+                                action="../bat/rd-mailform.php"
+                                method="post"
+                                class="row gy-4 rd-mailform"
+                                data-form-output="form-output-global"
+                                data-form-type="contact"
+                        >
                             <div class="col-md-6">
                                 <label for="first_name" class="form-label fw-semibold">First Name</label>
                                 <input type="text"
@@ -96,7 +103,13 @@
                                           id="message"></textarea>
                             </div>
 
-                            <div class="col-12">
+                            <div class="col-12 col-sm-6">
+                                    <div class="g-recaptcha"
+                                         data-sitekey="6LcZXW4UAAAAAHyXF5Cp3C1HUNdUmniJlKLjOYDB"
+                                         id="g-recaptcha"></div>
+
+                            </div>
+                            <div class="col-12 col-sm-6">
                                 <button type="submit"
                                         class="btn btn-lg btn-primary fw-semibold w-100">
                                     Book an Appointment
@@ -149,6 +162,8 @@
         </div>
     </div>
 
+    <div class="snackbars" id="form-output-global"></div>
+
 
     <!---- Footer ---->
     <footer class="p-3 bg-primary">
@@ -163,9 +178,22 @@
 
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="plugins/tiny-slider/tiny-slider.js"></script>
-
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131025250-1"></script>
 <script>
+    window.dataLayer = window.dataLayer || [];
 
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'UA-131025250-1');
 </script>
+
+<script src="../js/core.min.js"></script>
+<script src="../js/script.js"></script>
+
+
 </body>
 </html>
